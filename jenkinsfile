@@ -1,0 +1,26 @@
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building the project...'
+                // Add your build commands here, e.g.:
+                // sh 'npm install'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Running tests...'
+                // Add your testing commands here, e.g.:
+                // sh 'npm test'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying the project...'
+                // Add your deployment steps here, e.g.:
+                // sh 'npm run deploy'
+            }
+        }
+    }
+}
